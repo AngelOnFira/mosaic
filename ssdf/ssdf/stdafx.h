@@ -20,6 +20,7 @@
 #include <list>
 #include <memory>
 #include <string>
+#include <stdint.h>
 
 //CGAL
 #include <CGAL/Cartesian.h>
@@ -53,7 +54,7 @@ using cv::Vec4f;
 typedef cv::Rect_<float>    Rect;
 typedef cv::Rect_<int>      RectI;
 typedef cv::Point_<float>   Point;
-typedef cv::Point_<int>     PointI;
+typedef cv::Point_<int>		PointI;
 typedef std::vector<Point>  Points;
 typedef std::vector<PointI> PointsI;
 

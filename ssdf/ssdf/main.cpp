@@ -11,9 +11,9 @@ using namespace Pups;
 
 int main( int argc, const char* argv[] ){
     //create a randomly labeled mesh
-    Label::Simple redLabel( Color::RED );
+    Label::Simple redLabel( Color::GREEN );
     Label::Simple blueLabel( Color::BLUE );
-    PointFunction::PoissonDisk pf( 0.15f );
+    PointFunction::PoissonDisk pf( 0.14f );
     LabelFunction::RandomBinary lf( &redLabel, &blueLabel );
     //LabelFunction::Solid lf( &redLabel );
     Mesh mesh( pf, lf );

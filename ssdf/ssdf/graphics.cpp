@@ -56,9 +56,9 @@ void FillConvexPoly( const Points& _pts, int val, Mat& img ){
     float height = img.rows;
     for ( const Point& _pt : _pts ){
         PointI pt( _pt.x * width, _pt.y * height );
-        pts.push_back( pt );
+        pts.push_back( cv::Point(pt.x,pt.y) );
     }
-    cv::fillConvexPoly( img, pts, val );
+    cv::fillConvexPoly( img, pts.data(), pts.size(), val );
 }
 
 void DebugImage( const string& str, int index, const Mat& img ){
